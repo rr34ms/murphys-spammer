@@ -1,1 +1,1 @@
-INSTALL PYTHON : https://python.org/
+# INSTALL PYTHON : https://python.org/
