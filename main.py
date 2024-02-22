@@ -23,24 +23,23 @@ from pystyle import *
 def clear():
     os.system('cls')
 
-with open('config.json') as config_file:
-    config = json.load(config_file)
-    webhook = config['webhook']
-    name = config['name']
-    pp = config['pp']
-    
-    if pp == "":
-        pp = None
-    if name == "":
-        name = None
-    if webhook == "":
-        webhook = input('Veuillez entrer un webhook >>')
-        
-        config['webhook'] = webhook
-        json.dump(config, open('config.json', 'w'), indent=1)
-
 def main():
     while True:
+        with open('config.json') as config_file:
+            config = json.load(config_file)
+            webhook = config['webhook']
+            name = config['name']
+            pp = config['pp']
+            
+            if pp == "":
+                pp = None
+            if name == "":
+                name = None
+            if webhook == "":
+                webhook = input('Veuillez entrer un webhook >>')
+                
+                config['webhook'] = webhook
+                json.dump(config, open('config.json', 'w'), indent=1)
         clear()
         banner = int(input(Colorate.Horizontal(Colors.rainbow, """
 ███╗   ███╗██╗   ██╗██████╗ ██████╗ ██╗  ██╗██╗   ██╗███████╗    ███████╗██████╗  █████╗ ███╗   ███╗███╗   ███╗███████╗██████╗ 
