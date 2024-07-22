@@ -1,6 +1,6 @@
 import webbrowser
 import os
-webbrowser.open("https://discord.gg/murphys")
+webbrowser.open("https://discord.gg/vyr27Hnnxc")
 try:
     import pystyle
 except ImportError:
