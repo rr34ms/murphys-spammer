@@ -1,4 +1,4 @@
-WEBHOOK SPAMMER BY https://discord.gg/murphys
+WEBHOOK SPAMMER BY https://discord.gg/vyr27Hnnxc
 
 # INSTALL PYTHON : https://python.org/
 
